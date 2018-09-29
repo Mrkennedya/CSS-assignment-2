@@ -13,6 +13,8 @@
 
 .text h2 {
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -28,19 +30,23 @@
 #cougar .photo a {
   color: #666;
 }
+#cougar .text a {
+  color: #666;
+}
+#cougar .text {
+  color: #fff;
+}
 
 #lion {
   background-color: #B26219;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #000;
 }
 
 #tiger {
   background-color: #FFBD82;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #000;
 }
 
 /* you may add to or change the body rule */
@@ -48,6 +54,7 @@ body {
     font-family: sans-serif;
     color: #000;
     background: #000;
+    margin: 0;
 }
 img {
   max-width: 100%; /* DO NOT delete or change this line */
@@ -86,12 +93,21 @@ nav ul {
   list-style: none;
   background: #333;
   padding: .6 rem 1 rem;
+  text-decoration: none;
 }
 
 nav ul li {
   margin: 0;
   margin-left: 1rem;
 
+}
+
+article {
+  padding: 60px 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 a {
